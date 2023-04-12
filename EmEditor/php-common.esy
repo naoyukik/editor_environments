@@ -9,6 +9,7 @@
 ;
 ; Submit your customized file to submit@emurasoft.com 
 ; to be listed in www.emeditor.com Library page - Syntax Files section.
+;
 #Highlight=on
 #BeginTag=
 #EndTag=
@@ -31,6 +32,9 @@
 #Keyword color=2,word=off,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
 \b((a(bstract|nd|rray|s))|(c(a(llable|se|tch)|l(ass|one)|on(st|tinue)))|(d(e(clare|fault)|ie|o))|(e(cho|lse(if)?|mpty|nd(declare|for(each)?|if|switch|while)|val|x(it|tends)))|(f(inal|or(each)?|unction))|(g(lobal|oto))|(i(f|mplements|n(clude(_once)?|st(anceof|eadof)|terface)|sset))|(n(amespace|ew))|(p(r(i(nt|vate)|otected)|ublic))|(re(quire(_once)?|turn))|(s(tatic|witch))|(t(hrow|r(ait|y)))|(u(nset|se))|(__halt_compiler|break|list|(x)?or|var|while))\b\s+.*?$
 
+#Keyword color=8,word=on,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
+\sfunction\s(\w+)
+
 #Keyword color=10,word=off,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
 \b((a(bstract|nd|rray|s))|(c(a(llable|se|tch)|l(ass|one)|on(st|tinue)))|(d(e(clare|fault)|ie|o))|(e(cho|lse(if)?|mpty|nd(declare|for(each)?|if|switch|while)|val|x(it|tends)))|(f(inal|or(each)?|unction))|(g(lobal|oto))|(i(f|mplements|n(clude(_once)?|st(anceof|eadof)|terface)|sset))|(n(amespace|ew))|(p(r(i(nt|vate)|otected)|ublic))|(re(quire(_once)?|turn))|(s(tatic|witch))|(t(hrow|r(ait|y)))|(u(nset|se))|(__halt_compiler|break|list|(x)?or|var|while))\b
 
@@ -49,8 +53,8 @@ parent|self
 #Keyword color=7,word=on,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
 \/\*\*|\*\/|\s\*\s
 
-#Keyword color=10,word=off,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
-@(param|var)\s
+#Keyword color=10,word=on,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
+@((a(pi|uthor))|(c(ategory|opyright))|(deprecated)|(example)|(filesource)|(global)|(ignore)|(i(n(heritdoc|ternal)))|(l(i(cense|nk)))|(method)|(p(a(ckage|ram)))|(property-(read|write))|(property)|(return)|(s(ee|ince|ource|ubpackage))|(t(hrows|odo))|(use(d-by|s))|(v(ar|ersion)))\s
 
 #Keyword color=2,word=on,rightall=off,case=off,insidetag=off,regexp=on,rightall2=off
 int|float|bool|string|true|false|null|void|iterable|object|mixed|never|enum|resource|numeric
